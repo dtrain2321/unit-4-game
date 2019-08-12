@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Crystal game</title>
+</head>
+<body>
+
+    <div class="container">
+
+            <div class="jumbotron" style="background-color: purple; color: white">
+                <div class="container">
+                    <h1 class="text-center"><strong> Crystal Collector</strong></h1>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class ="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color:blue; color: white;">
+                            Instructions
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"></h3>
+                            <p class="card-text"><small>Here's how the game works.
+                                    There will be four crystals displayed as buttons on the page.
+                                    The player will be shown a random number at the start of the game.
+                                    When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+                                    Your game will hide this amount until the player clicks a crystal.
+                                    When they do click one, update the player's score counter.
+                                    The player wins if their total score matches the random number from the beginning of the game.
+                                    The player loses if their score goes above the random number.
+                                    The game restarts whenever the player wins or loses.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color:blue; color: white;">
+                            Target Score
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-center" id="targetScore">
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color:blue; color: white;">
+                            Your Score
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-center" id="yourScore">
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="card">
+                        <div class="card-header text-center" style="background-color:blue; color: white;">
+                            Crystal Selection
+                        </div>
+                        <div class="card-body text-center">
+                            <img class="crystalblue"  src="assets/images/blue.jpeg" alt="" id="blue">
+                            <img class="crystalgreen" src="assets/images/green.jpeg" alt=""id="green">
+                            <img class="crystalred"   src="assets/images/red.jpeg" alt=""id="red">
+                            <img class="crystalyellow" src="assets/images/yellow.jpeg" alt=""id="yellow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="card">
+                    <div class="card-header text-center" style="background-color:blue; color: white;">
+                        Win count
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="winCount">
+                            0
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header text-center" style="background-color:blue; color: white;">
+                            Loses count
+                        </div>
+                        <div class="card-body">
+                        <h3 class="card-title text-center"id="loseCount">
+                            0
+                        </h3>
+                    </div>
+                </div>
+            </div>
+         </div>       
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
